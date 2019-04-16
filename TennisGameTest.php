@@ -97,34 +97,36 @@ class TennisGameTest
         switch ($player1Score)
         {
             case self::LOVE:
-                $this->score = "Love";
+                $this->player1Score = "Love";
                 break;
             case self::FIFTEEN:
-                $this->score = "Fifteen";
+                $this->player1Score = "Fifteen";
                 break;
             case self::THIRTY:
-                $this->score = "Thirty";
+                $this->player1Score = "Thirty";
                 break;
             case self::FORTY:
-                $this->score = "Fourty";
+                $this->player1Score = "Fourty";
                 break;
         }
 
         switch ($player2Score)
         {
             case self::LOVE:
-                $this->score = "Love";
+                $this->player2Score = "Love";
                 break;
             case self::FIFTEEN:
-                $this->score = "Fifteen";
+                $this->player2Score = "Fifteen";
                 break;
             case self::THIRTY:
-                $this->score = "Thirty";
+                $this->player2Score = "Thirty";
                 break;
             case self::FORTY:
-                $this->score = "Fourty";
+                $this->player2Score = "Fourty";
                 break;
         }
+
+        return $this->score = "$this->player1Score - $this->player2Score";
     }
 
     public function __toString()
